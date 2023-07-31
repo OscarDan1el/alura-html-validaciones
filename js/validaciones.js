@@ -35,7 +35,7 @@ export function valida(input){
 const tipoErrores = [
 "valueMissing",
 "typeMismatch",
-"patternMissing",
+"patternMismatch",
 "customError",
 ];
 
@@ -87,7 +87,7 @@ const validadores  = {
 
 function mostrarMensajeError(tipoDeInput, input){
     let mensaje = "";
-    tipoErrores.forEach( error =>{
+    tipoErrores.forEach(( error) =>{
         if(input.validity[error]){
         console.log(tipoDeInput,error);
         console.log(input.validity[error]);
